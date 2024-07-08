@@ -18,7 +18,7 @@ const Stopwatch = () => {
   const DisplayTime = (TimeSpent) => {
     const minutes = Math.floor(TimeSpent / 60);
     const seconds = TimeSpent % 60;
-    return `${minutes}::${seconds > 9 ? "" : 0}${seconds}`;
+    return `Time: ${minutes}:${seconds > 9 ? "" : 0}${seconds}`;
   };
 
   const StartStop = () => {
